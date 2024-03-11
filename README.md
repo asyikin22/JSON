@@ -27,6 +27,7 @@
 * [...] indicates that the collection of objects is an array
 * Object has a key-pair value, in this example
 * The key and value shoudl be wrapped inside (" ") double quote.
+  
   ![image](https://github.com/asyikin22/JSON/assets/148519441/f96fe559-3961-45bb-8a0d-0b3a0342bd26)
 
 * Inisde our javascript file we can create a variable that contains this JSON data array
@@ -40,15 +41,24 @@
 
   ![image](https://github.com/asyikin22/JSON/assets/148519441/7d541e42-cec2-474f-9ea5-c161d025ada0)
 
-  **JSON.stringify()**
-  * In my JSON file, i created 3 separate files for names(array), person (object with key-pair value) and people (collection of objects in an array)
-  * In order to convert JavaScript object to to JSON string format, i declare all of the file in a varibale
-  * JSON.stringify() function is called with 'people' as its argument
-  * console.log(people): logs the original array or object (people) to the console. It outputs array or object as is, in its original JavaScript representation.
-  * console.log(jsonString): logs the JSON string (jsonString) to the console. It displays a JSON string representation
-  * Now that it's converted into a JSON format, we can then transmit them to other networks or server
+**JSON.stringify()**
+* In my JSON file, i created 3 separate files for names(array), person (object with key-pair value) and people (collection of objects in an array)
+* In order to convert JavaScript object to to JSON string format, i declare all of the file in a varibale
+* JSON.stringify() function is called with 'people' as its argument
+* console.log(people): logs the original array or object (people) to the console. It outputs array or object as is, in its original JavaScript representation.
+* console.log(jsonString): logs the JSON string (jsonString) to the console. It displays a JSON string representation
+* Now that it's converted into a JSON format, we can then transmit them to other networks or server
     
-    ![image](https://github.com/asyikin22/JSON/assets/148519441/06d8a9aa-70d9-45a4-aa3a-972dfddd7109)
+  ![image](https://github.com/asyikin22/JSON/assets/148519441/06d8a9aa-70d9-45a4-aa3a-972dfddd7109)
+
+**fetch()**
+* We can use fetch API and then logs various information from the fetched data to the console.
+* fetch(books.json) initiates a GET request to fetch teh content of JSON file
+* .then(response => response.json() parses JSON response from teh server into JS object.
+* .then(value => console.log(value)) logs the entire array of book objects to teh console.
+* We can apply similar logic in the following two functions after the first one. But the only difference is, on the second promise chain, we use dot notation to access the titles and authors of each book in teh fetched data to the console.
+
+![image](https://github.com/asyikin22/JSON/assets/148519441/bbfdf06f-d7ce-46d2-9cf0-82b11149bbd6)
 
 
 
