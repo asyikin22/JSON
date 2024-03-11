@@ -1,0 +1,36 @@
+[
+    {
+        "title": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "rating": "4.26",
+        "publishedYear": "1960"
+    },
+
+    {
+        "title": "The Perks of Being a Wallflower",
+        "author": "Stephen Chbosky",
+        "rating": "4.23",
+        "publishedYear": "1999"
+    },
+
+    {
+        "title": "The Da Vinci Code",
+        "author": "Dan Brown",
+        "rating": "3.91",
+        "publishedYear": "2003"
+    },
+
+    {
+        "title": "Pride and Prejudice",
+        "author": "Jane Austen",
+        "rating": "4.29",
+        "publishedYear": "1813"
+    },
+
+    {
+        "title": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "rating": "3.93",
+        "publishedYear": "1925"
+    }
+]

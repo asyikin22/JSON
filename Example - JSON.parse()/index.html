@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Parse a JSON object</title>
+</head>
+<body>
+    
+    <script>
+
+        let books =
+       `[
+            {
+                "title": "To Kill a Mockingbird",
+                "author": "Harper Lee",
+                "rating": "4.26",
+                "publishedYear": "1960"
+            },
+
+            {
+                "title": "The Perks of Being a Wallflower",
+                "author": "Stephen Chbosky",
+                "rating": "4.23",
+                "publishedYear": "1999"
+            },
+
+            {
+                "title": "The Da Vinci Code",
+                "author": "Dan Brown",
+                "rating": "3.91",
+                "publishedYear": "2003"
+            },
+
+            {
+                "title": "Pride and Prejudice",
+                "author": "Jane Austen",
+                "rating": "4.29",
+                "publishedYear": "1813"
+            },
+
+            {
+                "title": "The Great Gatsby",
+                "author": "F. Scott Fitzgerald",
+                "rating": "3.93",
+                "publishedYear": "1925"
+            }
+        ]`
+
+        // console.log(JSON.parse(books)[2].title)
+        // console.log(JSON.parse(books)[1].author)
+
+        const parsedData = JSON.parse(books);
+        const firstBookTitle = JSON.parse(books)[2].title
+        const secondBookAuthor = JSON.parse(books)[1].author
+
+        console.log(parsedData)
+        console.log(firstBookTitle)
+        console.log(secondBookAuthor)
+
+
+    </script>
+</body>
+</html>
